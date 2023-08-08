@@ -3,24 +3,42 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+	<link rel="stylesheet" href="blackpink.css">
+	<script src="Blackpink.js" ></script>
+	<title>BlackPink</title>
 </head>
 <body>
-	<h1>Discover Songs
-	<ul>
-		<li>Pink Venom </li>
-		<li> Shut Down </li>
-		<li> Du-Du </li>
-		<li>Forever Young  </li>
-		
-	</ul></h1>
-	<h2>Members
-	<ul>
-		<li>Lisa</li>
-		<li>Jisso</li>
-		<li>Rose</li>
-		<li>Jennie</li>
-	</ul></h2>
+	<main class="main">
+
+	<!-- The grid: four columns -->
+<div class="row">
+  <div class="column">
+    <img src="https://images-ext-1.discordapp.net/external/oX_OsgyykODUYm4vI14UmFfk5Hb5p2SSYRojNR2iW6A/https/upload.wikimedia.org/wikipedia/en/c/cb/Pink_Venom_Cover.jpg?width=375&height=375"
+		alt="Pink Venom" onclick="showSong(this);">
+  </div>
+  <div class="column">
+    <img src="https://images-ext-2.discordapp.net/external/96xpEozkXTqfRtwuASSJAOGG2-UmHsN0Lz3p7Qprt8M/https/images.genius.com/cda650447a3c3185398f63bfa46c0e2d.1000x1000x1.png?width=662&height=662"
+		alt="ShutDown" onclick="showSong(this);">
+  </div>
+  <div class="column">
+    <img src="https://images-ext-2.discordapp.net/external/zcZ-hHPQyxDMDqrh-mJjZQVOviyPe7GPwfkSJ1hIkeQ/https/upload.wikimedia.org/wikipedia/en/8/8b/Black_Pink_-_Ddu-Du_Ddu-Du_%2528Japanese_version%2529_artwork.png?width=375&height=375"
+		alt="Du Du Du" onclick="showSong(this);">
+  </div>
+
+</div>
+
+<!-- The expanding image container -->
+<div class="container">
+  <!-- Close the image -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+  <!-- Expanded image -->
+  <img id="expandedImg" style="width:800px">
+		<!-- Image text -->
+  <div id="imgtext"></div>
+</div>
+</main>
+</body>
 	<style>
 	body {
   background-image: url('https://static.posters.cz/image/750/affiches-et-posters/blackpink-group-pink-i149553.jpg');
@@ -30,5 +48,5 @@
 }
 </style>
 
-</body>
+
 </html>

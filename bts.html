@@ -3,31 +3,42 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="bts.css">
+	<script src="bts.js" ></script>
 	<title>bts</title>
 </head>
 <body>
-	<h1>Discover Songs
-	<ul>
-		<li>Take Two </li>
-		<li> Proof</li>
-		<li> Butter </li>
-		<li>Dynamite</li>
-		<li>Air-Plane pt2</li>
-		<li>Permession to dance</li>
-		<li> Fake Love </li>
-		<li> Idol</li>
-	</ul></h1>
-	<h2>Members
-	<ul>
-		<li>Jin</li>
-		<li>Suga</li>
-		<li>J-hope</li>
-		<li>R-M</li>
-		<li>Taehyung</li>
-		<li>Park-Jimin</li>
-		<li>Jung-kook</li>
+	<main class="main">
 
-	</ul></h2>
+	<!-- The grid: four columns -->
+<div class="row">
+  <div class="column">
+    <img src="https://images-ext-2.discordapp.net/external/VYWotD-mOzsf_95gQWl0UshxuSQRuQvfPk44F2SmFJI/https/i1.sndcdn.com/artworks-yzkdmnwwzvigUJGB-vYH4Dw-t500x500.jpg"
+		alt="Take Two" onclick="showSong(this);">
+  </div>
+  <div class="column">
+    <img src="https://images-ext-2.discordapp.net/external/xTQ5jWFKSrdNChHomHMkBe4wyM60cMNHqvnescBVyVs/https/upload.wikimedia.org/wikipedia/en/thumb/d/db/BTS_-_Butter.png/220px-BTS_-_Butter.png"
+		alt="butter" onclick="showSong(this);">
+  </div>
+  <div class="column">
+    <img src="https://images-ext-2.discordapp.net/external/QXFx-1InifW0J16Fz04oTZQplZzIFYtXgkNjP5Ek4Uk/https/upload.wikimedia.org/wikipedia/en/6/6f/BTS_Proof_album_cover_art.jpg"
+		alt="Proof" onclick="showSong(this);">
+  </div>
+
+</div>
+
+<!-- The expanding image container -->
+<div class="container">
+  <!-- Close the image -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+  <!-- Expanded image -->
+  <img id="expandedImg" style="width:800px">
+		<!-- Image text -->
+  <div id="imgtext"></div>
+</div>
+</main>
+	</body>
 	<style>
 body {
   background-image: url('https://variety.com/wp-content/uploads/2020/09/bts-variety-cover-shoot-full-band-1-16x9-1.jpg');
@@ -36,6 +47,4 @@ body {
   background-size: 100% 100%;
 }
 </style>
-
-</body>
 </html>

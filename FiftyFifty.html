@@ -3,24 +3,43 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+	<link rel="stylesheet" href="blackpink.css">
+	<script src="Blackpink.js" ></script>
+	<title>FiftyFifty</title>
 </head>
 <body>
-	<h1>Discover Songs
-	<ul>
-		<li>Cupid </li>
-		<li> Higher</li>
-		<li>  Tell Me </li>
-		
-		
-	</ul></h1>
-	<h2>Members
-	<ul>
-		<li>Saena </li>
-		<li>Kaena</li>
-		<li>Sio</li>
-		<li>Aran</li>
-	</ul></h2>
+	<main class="main">
+
+	<!-- The grid: four columns -->
+<div class="row">
+  <div class="column">
+    <img src="https://images-ext-2.discordapp.net/external/JaHXh_OWMbn1geZcuKtrxUFZeuCP80oG1vdg-wLYkh4/https/i.ytimg.com/vi/6uvUTu716rU/maxresdefault.jpg?width=1177&height=662"
+		alt="Cupid" onclick="showSong(this);">
+  </div>
+  <div class="column">
+    <img src="https://images-ext-2.discordapp.net/external/gVxmzroXffNfrUOA7rLT4fnWYk_LVbHimk4vVE60-TY/%3Fcb%3D20230224210644/https/static.wikia.nocookie.net/fiftyfifty/images/8/81/The_Beginning_Album.jpeg/revision/latest?width=662&height=662"
+		alt="The Begining" onclick="showSong(this);">
+  </div>
+  <div class="column">
+    <img src="https://images-ext-1.discordapp.net/external/mHphDUn6LTq2T1DS6JMDOjKWph3V1yUeP0VvUTzTi0k/https/colorcodedlyrics.com/wp-content/uploads/2022/11/fifty-fifty-THE-FIFTY.jpeg?width=662&height=662"
+		alt="The Fifty" onclick="showSong(this);">
+  </div>
+
+</div>
+
+<!-- The expanding image container -->
+<div class="container">
+  <!-- Close the image -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+  <!-- Expanded image -->
+  <img id="expandedImg" style="width:800px">
+		<!-- Image text -->
+  <div id="imgtext"></div>
+</div>
+</main>
+
+</body>
 	<style>
 	body {
   background-image: url('https://i.ytimg.com/vi/Qc7_zRjH808/maxresdefault.jpg');
@@ -30,5 +49,4 @@
 }
 </style>
 
-</body>
 </html>

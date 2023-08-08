@@ -3,25 +3,42 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="blackpink.css">
+	<script src="Blackpink.js" ></script>
 	<title></title>
 </head>
 <body>
-	<h1>Discover Songs
-	<ul>
-		<li>OMG </li>
-		<li> Hype Boy  </li>
-		<li>Super Shy  </li>
-		<li> Eta </li>
-		
-	</ul></h1>
-	<h2>Members
-	<ul>
-		<li>Minji</li>
-		<li>Hannie</li>
-		<li>Danielle</li>
-		<li>Haerin</li>
-		<li>Hyein</li>
-	</ul></h2>
+	<main class="main">
+
+	<!-- The grid: four columns -->
+<div class="row">
+  <div class="column">
+    <img src="https://images-ext-2.discordapp.net/external/j5wCHQGdoW_5b-7GJ-T15mMbfzrKtGUGdXXHsXHeVFk/%3Ftoken%3DeyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2E4YWU0N2IyLTBhNzQtNGYxMy1hYjRhLTA0NGRiMGFhMTllMFwvZGZuaXF5ZS1hYTY2OGJkOC05YjJiLTQzNDEtYWMxZS03NzA4MzE5MDUzYTAuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.eg3LaVfODNbLYmFb_sJx_ih6dURYtNIyhBUOezXa2D0/https/images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a8ae47b2-0a74-4f13-ab4a-044db0aa19e0/dfniqye-aa668bd8-9b2b-4341-ac1e-7708319053a0.jpg?width=667&height=662"
+		alt="OMG" onclick="showSong(this);">
+  </div>
+  <div class="column">
+    <img src="https://images-ext-1.discordapp.net/external/tRvsyxjpoqoPlDiipAh3_vVmtCD6IrMRJhdlnNDMPUE/%3Ftoken%3DeyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4MCIsInBhdGgiOiJcL2ZcLzMxMTA4MzcxLThkNmItNDUxYy05YjY4LWM0NDAxMGU0NDM2ZlwvZGZvOWVkeC0zNTVjZTgzMi1hYTcxLTQ5MTItODFmNS1mMzg3YWVhM2E3OGQucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.ijf3f7tMctCyS0Zk0_SLE6t2DJ5rRAxmc0vZujKzf00/https/images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/31108371-8d6b-451c-9b68-c44010e4436f/dfo9edx-355ce832-aa71-4912-81f5-f387aea3a78d.png/v1/fill/w_894%2Ch_894%2Cq_70%2Cstrp/new_jeans__newjeans__hype_boy_cover_art_by_halliewiebel_dfo9edx-pre.jpg?width=662&height=662"
+		alt="Hype Boy" onclick="showSong(this);">
+  </div>
+  <div class="column">
+    <img src="https://images-ext-2.discordapp.net/external/ZnRqds5KmOyRYsxY3oISTfJ5qs5oQvaWXFlMJOfy4Zo/%3Ftoken%3DeyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI4MCIsInBhdGgiOiJcL2ZcLzMxMTA4MzcxLThkNmItNDUxYy05YjY4LWM0NDAxMGU0NDM2ZlwvZGZib3AyeS00OGJhYWUxOC0wZTNiLTQ2MzgtODI2YS1lYzNhM2IyODQyODcucG5nIiwid2lkdGgiOiI8PTEyODAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.8aljJPgt9MNSz0_QY-yoiIi2mI5Qy-4GBuvoFyrg3VQ/https/images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/31108371-8d6b-451c-9b68-c44010e4436f/dfbop2y-48baae18-0e3b-4638-826a-ec3a3b284287.png/v1/fill/w_1280%2Ch_1280%2Cq_80%2Cstrp/newjeans_nwjns_attention_cover_art_by_halliewiebel_dfbop2y-fullview.jpg?width=662&height=662"
+		alt="Attention" onclick="showSong(this);">
+  </div>
+
+</div>
+
+<!-- The expanding image container -->
+<div class="container">
+  <!-- Close the image -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+  <!-- Expanded image -->
+  <img id="expandedImg" style="width:800px">
+		<!-- Image text -->
+  <div id="imgtext"></div>
+</div>
+</main>
+</body>
 	<style>
 	body {
   background-image: url('https://cdn.shortpixel.ai/spai/q_lossy+w_844+h_563+to_auto+ret_img/https://koreanquiz.com/wp-content/uploads/2023/01/New-Jeans-Trivia.jpg');
@@ -30,6 +47,4 @@
   background-size: 100% 100%;
 }
 </style>
-
-</body>
 </html>
